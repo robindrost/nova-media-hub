@@ -14,6 +14,7 @@ class MediaHubController extends Controller
 {
     public function getCollections(Request $request)
     {
+        $showAllCollections = config('nova-media-hub.show_all_collections_text');
         $defaultCollections = MediaHub::getDefaultCollections();
 
         $collections = MediaHub::getMediaModel()::select('collection_name')
@@ -21,6 +22,7 @@ class MediaHubController extends Controller
             ->get()
             ->pluck('collection_name')
             ->merge($defaultCollections)
+            ->merge($showAllCollections)
             ->unique()
             ->values()
             ->toArray();

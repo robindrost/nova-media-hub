@@ -8,7 +8,7 @@ class Collection
 {
     public function handle($query, Closure $next)
     {
-        if (empty(request()->get('collection'))) {
+        if (empty(request()->get('collection')) || request()->get('collection') === config('nova-media-hub.show_all_collections_text')) {
             return $next($query);
         }
 

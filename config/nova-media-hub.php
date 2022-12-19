@@ -55,6 +55,9 @@ return [
     'collections' => [
         'default',
     ],
+    
+    // Text used to display the show all collection
+    'show_all_collections_text' => 'Show all',
 
     // Defines whether user can create collections in the "Upload media" modal
     // If set to false, the user can only use the collections defined in the config
