@@ -43,5 +43,6 @@
   "novaMediaHub.existingMediaDetected": "Alcuni elementi media sono stati già trovati nel server e non sono stati (ri)caricati. Tuttavia, sono stati spostati all'inizio della collezione per facilitarne la ricerca.",
   "novaMediaHub.searchMediaTitle": "Cerca per nome",
   "novaMediaHub.orderBy.updated_at": "Caricato il",
-  "novaMediaHub.orderBy.created_at": "Creato il"
+  "novaMediaHub.orderBy.created_at": "Creato il",
+  "novaMediaHub.showAllText": "mostra tutto"
 }
